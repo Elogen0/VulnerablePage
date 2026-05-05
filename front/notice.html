@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BottleGround 공지사항</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav panel">
+      <a class="brand-box" href="./index.html" aria-label="BottleGround 홈">
+        <img class="brand-logo" src="./img/logo.png" alt="BottleGround 로고">
+      </a>
+
+      <nav class="menu-grid" aria-label="주요 메뉴">
+        <a class="is-active" href="./notice.html">공지사항</a>
+        <a href="./download.html">다운로드</a>
+        <a href="./community.html">커뮤니티</a>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+      <section class="panel page-hero page-hero--compact">
+        <p class="page-kicker">NOTICE BOARD</p>
+        <h1>공지사항 게시판</h1>
+        <p class="page-lead">점검, 업데이트, 이벤트, 고객센터 운영 정책에 대한 공지를 확인할 수 있습니다.</p>
+      </section>
+
+      <section class="panel page-panel">
+        <div class="panel-header">
+          <h2>최신 공지</h2>
+          <a href="./index.html">메인으로</a>
+        </div>
+        <iframe
+          class="board-embed"
+          src="./notice-board.html"
+          title="공지사항 게시판"
+          loading="lazy">
+        </iframe>
+      </section>
+    </main>
+
+    <footer class="footer panel">
+      <p>© 2026 BottleGround. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

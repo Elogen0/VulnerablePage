@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BottleGround 회원가입</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./auth.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav panel">
+      <a class="brand-box" href="./index.html" aria-label="BottleGround 홈">
+        <img class="brand-logo" src="./img/logo.png" alt="BottleGround 로고">
+      </a>
+
+      <nav class="menu-grid" aria-label="주요 메뉴">
+        <a href="./notice.html">공지사항</a>
+        <a href="./download.html">다운로드</a>
+        <a href="./community.html">커뮤니티</a>
+      </nav>
+
+    </header>
+
+    <main class="page-main signup-page">
+      <section class="panel page-hero page-hero--compact">
+        <p class="page-kicker">CREATE ACCOUNT</p>
+        <h1>회원가입</h1>
+        <p class="page-lead">BottleGround 계정 정보를 입력하고 게임과 커뮤니티를 이용할 수 있습니다.</p>
+      </section>
+
+      <section class="panel page-panel signup-panel">
+        <div class="panel-header">
+          <h2>계정 정보</h2>
+          <a href="./index.html">메인으로</a>
+        </div>
+
+        <form class="write-form signup-form">
+          <div class="field-grid">
+            <label class="field-label" for="signup-login-id">아이디</label>
+            <input class="field-input" id="signup-login-id" name="login_id" type="text" placeholder="아이디 입력">
+          </div>
+
+          <div class="field-grid">
+            <label class="field-label" for="signup-nickname">닉네임</label>
+            <input class="field-input" id="signup-nickname" name="nickname" type="text" placeholder="닉네임 입력">
+          </div>
+
+          <div class="field-grid">
+            <label class="field-label" for="signup-password">비밀번호</label>
+            <input class="field-input" id="signup-password" name="password" type="password" placeholder="비밀번호 입력">
+          </div>
+
+          <div class="field-grid">
+            <label class="field-label" for="signup-password-confirm">비밀번호 확인</label>
+            <input class="field-input" id="signup-password-confirm" name="passwordConfirm" type="password" placeholder="비밀번호 재입력">
+          </div>
+
+          <div class="page-actions page-actions--spread">
+            <a class="outline-link" href="./index.html">취소</a>
+            <button class="primary-link" type="submit">가입하기</button>
+          </div>
+          <p class="form-message" data-form-message role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer panel">
+      <p>© 2026 BottleGround. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

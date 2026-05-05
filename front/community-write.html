@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BottleGround 글쓰기</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./community-write.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav panel">
+      <a class="brand-box" href="./index.html" aria-label="BottleGround 홈">
+        <img class="brand-logo" src="./img/logo.png" alt="BottleGround 로고">
+      </a>
+
+      <nav class="menu-grid" aria-label="주요 메뉴">
+        <a href="./notice.html">공지사항</a>
+        <a href="./download.html">다운로드</a>
+        <a class="is-active" href="./community.html">커뮤니티</a>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+      <section class="panel page-hero page-hero--compact">
+        <p class="page-kicker">WRITE POST</p>
+        <h1>커뮤니티 글쓰기</h1>
+        <p class="page-lead">게시글 내용과 첨부파일을 함께 등록할 수 있습니다.</p>
+      </section>
+
+      <section class="panel page-panel">
+        <div class="panel-header">
+          <h2>게시글 작성</h2>
+          <a href="./community.html">게시판으로</a>
+        </div>
+        <form class="write-form" data-community-write-form enctype="multipart/form-data">
+          <div class="field-grid">
+            <label class="field-label" for="post-category">말머리</label>
+            <select class="field-input" id="post-category" name="category">
+              <option>자유</option>
+              <option>공략</option>
+              <option>질문</option>
+              <option>길드</option>
+            </select>
+          </div>
+          <div class="field-grid">
+            <label class="field-label" for="post-title">제목</label>
+            <input class="field-input" id="post-title" name="title" type="text" placeholder="제목 입력">
+          </div>
+          <div class="field-grid">
+            <label class="field-label" for="post-body">내용</label>
+            <textarea class="field-textarea" id="post-body" name="body" placeholder="내용을 입력하세요"></textarea>
+          </div>
+          <div class="field-grid">
+            <label class="field-label" for="post-attachments">첨부파일</label>
+            <input
+              class="field-input file-input"
+              id="post-attachments"
+              name="attachments"
+              type="file"
+              multiple
+            >
+            <p class="field-hint">파일은 최대 3개, 각 10MB까지 첨부할 수 있습니다.</p>
+            <ul class="file-list" data-file-list></ul>
+          </div>
+          <p class="form-message" data-form-message role="status" aria-live="polite"></p>
+          <div class="page-actions page-actions--spread">
+            <a class="outline-link" href="./community.html">취소</a>
+            <button class="primary-link" type="submit">등록</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer panel">
+      <p>© 2026 BottleGround. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

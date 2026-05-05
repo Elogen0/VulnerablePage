@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=development node test.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "qa" : "cross-env NODE_ENV=qa nodemon server.js",
+    "prod": "cross-env NODE_ENV=production node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-session": "^1.17.3",
+    "express-throttle-bandwidth": "^1.0.1",
+    "formidable": "^3.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.15.2",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "response-time": "^2.3.2",
+    "session-file-store": "^1.5.0",
+    "socket.io": "^4.6.1",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "xlsx": "^0.18.5"
+  }
+}

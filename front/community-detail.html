@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BottleGround 커뮤니티 게시글</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./community-detail.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav panel">
+      <a class="brand-box" href="./index.html" aria-label="BottleGround 홈">
+        <img class="brand-logo" src="./img/logo.png" alt="BottleGround 로고">
+      </a>
+
+      <nav class="menu-grid" aria-label="주요 메뉴">
+        <a href="./notice.html">공지사항</a>
+        <a href="./download.html">다운로드</a>
+        <a class="is-active" href="./community.html">커뮤니티</a>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+      <section class="panel page-hero page-hero--compact">
+        <p class="page-kicker">COMMUNITY POST</p>
+        <h1 data-post-title>게시글</h1>
+        <p class="page-lead" data-post-summary>게시글을 불러오는 중입니다.</p>
+      </section>
+
+      <section class="panel page-panel">
+        <div class="panel-header">
+          <h2>게시글 상세</h2>
+          <a href="./community.html">목록으로</a>
+        </div>
+        <article class="post-detail" data-community-detail>
+          <p class="board-status" data-community-detail-status>게시글을 불러오는 중입니다.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer panel">
+      <p>© 2026 BottleGround. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BottleGround 메인</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./auth.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav panel">
+      <a class="brand-box" href="./index.html" aria-label="BottleGround 홈">
+        <img class="brand-logo" src="./img/logo.png" alt="BottleGround 로고">
+      </a>
+
+      <nav class="menu-grid" aria-label="주요 메뉴">
+        <a href="./notice.html">공지사항</a>
+        <a href="./download.html">다운로드</a>
+        <a href="./community.html">커뮤니티</a>
+      </nav>
+
+    </header>
+
+    <section class="hero-banner panel" aria-label="메인 배너">
+      <img class="hero-banner-image" src="./img/banner.png" alt="BottleGround 메인 배너">
+    </section>
+
+    <main class="content-grid">
+      <div class="content-main">
+        <section class="panel content-panel" id="notice">
+          <div class="panel-header">
+            <h2>공지사항</h2>
+            <a href="./notice.html">전체보기</a>
+          </div>
+          <iframe
+            class="board-embed"
+            src="./notice-board.html"
+            title="공지사항 게시판"
+            loading="lazy">
+          </iframe>
+        </section>
+
+        <section class="panel content-panel" id="community">
+          <div class="panel-header">
+            <h2>커뮤니티</h2>
+            <a href="./community.html">글 보기</a>
+          </div>
+          <iframe
+            class="board-embed"
+            src="./community-board.html"
+            title="커뮤니티 게시판"
+            loading="lazy">
+          </iframe>
+        </section>
+
+        <section class="panel content-panel">
+          <div class="panel-header">
+            <h2>바로가기</h2>
+            <a href="./download.html">다운로드 이동</a>
+          </div>
+          <div class="link-card-grid">
+            <a class="link-card" href="./notice.html">
+              <strong>공지사항 게시판</strong>
+              <p>운영 공지, 점검, 업데이트 안내 확인</p>
+            </a>
+            <a class="link-card" href="./download.html">
+              <strong>게임 다운로드</strong>
+              <p>클라이언트 다운로드와 최소/권장 사양 확인</p>
+            </a>
+            <a class="link-card" href="./community.html">
+              <strong>커뮤니티 게시판</strong>
+              <p>자유 게시글 열람 및 글쓰기 페이지 이동</p>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <section class="panel side-panel game-start-panel">
+          <a class="game-start-button" href="./download.html">Game Start</a>
+        </section>
+
+        <section class="panel side-panel">
+          <form class="login-form">
+            <label class="sr-only" for="login-id">아이디</label>
+            <input id="login-id" name="login_id" type="text" placeholder="login_id">
+
+            <label class="sr-only" for="login-password">비밀번호</label>
+            <input id="login-password" name="password" type="password" placeholder="password">
+
+            <div class="login-actions">
+              <a class="secondary-button" href="./signup.html">회원가입</a>
+              <button type="submit">Login</button>
+            </div>
+            <p class="form-message" data-form-message role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="panel side-panel external-panel">
+          <p>네이버 공식 카페로 이동.</p>
+          <a href="https://www.naver.com" target="_blank" rel="noreferrer">공식 카페</a>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="footer panel">
+      <p>© 2026 BottleGround. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

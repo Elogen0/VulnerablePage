@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BottleGround 커뮤니티</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./community.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav panel">
+      <a class="brand-box" href="./index.html" aria-label="BottleGround 홈">
+        <img class="brand-logo" src="./img/logo.png" alt="BottleGround 로고">
+      </a>
+
+      <nav class="menu-grid" aria-label="주요 메뉴">
+        <a href="./notice.html">공지사항</a>
+        <a href="./download.html">다운로드</a>
+        <a class="is-active" href="./community.html">커뮤니티</a>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+      <section class="panel page-hero page-hero--compact">
+        <p class="page-kicker">COMMUNITY BOARD</p>
+        <h1>커뮤니티 게시판</h1>
+        <p class="page-lead">자유 게시글, 공략, 파티 모집, 길드 홍보 게시물을 둘러볼 수 있습니다.</p>
+      </section>
+
+      <section class="panel page-panel">
+        <div class="panel-header">
+          <h2>최신 게시글</h2>
+          <a href="./index.html">메인으로</a>
+        </div>
+        <iframe
+          class="board-embed board-embed--community"
+          src="./community-board.html"
+          title="커뮤니티 게시판"
+          loading="lazy"
+          data-community-board-frame
+        ></iframe>
+        <div class="page-actions page-actions--spread">
+          <form class="board-search" data-community-page-search-form>
+            <label class="sr-only" for="community-page-search">게시글 검색</label>
+            <input
+              class="board-search-input"
+              id="community-page-search"
+              name="q"
+              type="search"
+              placeholder="검색어 입력"
+              autocomplete="off"
+              data-community-page-search-input
+            >
+            <button class="board-search-button" type="submit">검색</button>
+          </form>
+          <a class="primary-link" href="./community-write.html">글쓰기</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer panel">
+      <p>© 2026 BottleGround. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
